@@ -6,7 +6,8 @@
     "paths": {
       "@core/*": ["components/core/*"],
       "@feature/*": ["components/feature/*"],
-      "@shared/*": ["components/shared/*"]
+      "@shared/*": ["components/shared/*"],
+      "@lib/*": ["lib/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,
