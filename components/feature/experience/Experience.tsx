@@ -29,7 +29,7 @@ const Experience: React.FC<ExperienceProps> = ({
 
   return (
     <section className="flex flex-col items-center">
-      <h1>Experience</h1>
+      <h1 className="mb-5 title">Experience</h1>
       <section className="tabs">
         <h2
           className={`tab tab-bordered ${getActiveTab(Tabs.EDUCATION)}`}
