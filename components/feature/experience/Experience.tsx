@@ -49,7 +49,7 @@ const Experience: React.FC<ExperienceProps> = ({
           Work
         </h2>
       </section>
-      <section className="min-h-screen w-full max-w-4xl mx-auto">
+      <section className="min-h-max w-full max-w-4xl mx-auto">
         {currentTab === Tabs.EDUCATION ? (
           <Chrono
             items={educExperienceItems}
