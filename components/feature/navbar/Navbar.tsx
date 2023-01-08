@@ -44,7 +44,7 @@ const Navbar: React.FC<NavbarProps> = ({ children }) => {
           <NavbarMenu />
         </nav>
         {/*  Page content */}
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-max">{children}</main>
       </section>
       <NavbarSideContent unToggleSidebar={unToggle} />
     </section>
