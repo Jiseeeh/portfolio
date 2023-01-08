@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
           width={500}
         />
         <section>
-          <h1 className="text-5xl font-bold">
+          <h1 className="title">
             Hi&#33; I&#39;m John Carlo N&#46; Camara&#44;
           </h1>
           <p className="py-6">
