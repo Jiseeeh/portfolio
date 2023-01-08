@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Chrono } from "react-chrono";
 
 import IExperience from "interfaces/IExperience";
+import NoWorkExperience from "./NoWorkExperience";
 
 interface ExperienceProps {
   workExperienceItems: IExperience[];
@@ -58,6 +59,8 @@ const Experience: React.FC<ExperienceProps> = ({
             hideControls
             enableOutline
           />
+        ) : workExperienceItems.length === 0 ? (
+          <NoWorkExperience />
         ) : (
           <Chrono
             items={workExperienceItems}
