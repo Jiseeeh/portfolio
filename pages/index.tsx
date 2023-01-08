@@ -1,8 +1,25 @@
 import Head from "next/head";
+import { InferGetStaticPropsType } from "next";
 
 import Hero from "@feature/hero/Hero";
+import About from "@feature/about/About";
+import sanityClient from "@lib/sanity";
 
-export default function Home() {
+export const getStaticProps = () => {}; // placholder muna sayang request
+// export const getStaticProps = async () => {
+//   const response = await sanityClient.fetch(`*[_type == 'information'][0]`);
+//   const aboutMe: string = await response.aboutMe;
+
+//   return {
+//     props: {
+//       aboutMe,
+//     },
+//   };
+// };
+
+export default function Home({
+  aboutMe,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
       <Head>
@@ -12,6 +29,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
+      <About
+        data={
+          "My interest in tech began when I saw my cousin, who is now a software engineer, do seemingly magical things with computers. However, it wasn't until 2021, when I saw a friend's website about our country, that I really started to dive into self-learning and explore the endless possibilities that technology has to offer. I am excited to continue growing my knowledge and skills in the tech industry, and I hope to one day make a positive impact through my work."
+        }
+      />
     </>
   );
 }
