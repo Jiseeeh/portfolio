@@ -5,12 +5,13 @@ import sanityClient from "@lib/sanity";
 import Hero from "@feature/hero/Hero";
 import About from "@feature/about/About";
 import Experience from "@feature/experience/Experience";
+import TechStack from "@feature/tech-stack/TechStack";
 
 export const getStaticProps = async () => {
   const information = await sanityClient.fetch(`*[_type == 'information'][0]`);
   const education = await sanityClient.fetch(`*[_type == 'education']`);
   const work = await sanityClient.fetch(`*[_type == 'experience']`);
-
+  const techStack = await sanityClient.fetch(`*[_type == 'techStack']`);
   const aboutMe: string = await information.aboutMe;
 
   return {
@@ -18,6 +19,7 @@ export const getStaticProps = async () => {
       aboutMe,
       education,
       work,
+      techStack,
     },
   };
 };
@@ -26,6 +28,7 @@ export default function Home({
   aboutMe,
   education,
   work,
+  techStack,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
@@ -38,6 +41,7 @@ export default function Home({
       <Hero />
       <About data={aboutMe} />
       <Experience educExperienceItems={education} workExperienceItems={work} />
+      <TechStack data={techStack} />
     </>
   );
 }
