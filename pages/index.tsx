@@ -7,6 +7,7 @@ import About from "@feature/about/About";
 import Experience from "@feature/experience/Experience";
 import TechStack from "@feature/tech-stack/TechStack";
 import Projects from "@feature/projects/Projects";
+import Contact from "@feature/contact/Contact";
 
 export const getStaticProps = async () => {
   const information = await sanityClient.fetch(`*[_type == 'information'][0]`);
@@ -47,6 +48,7 @@ export default function Home({
       <Experience educExperienceItems={education} workExperienceItems={work} />
       <TechStack data={techStack} />
       <Projects data={projects} />
+      <Contact />
     </>
   );
 }
