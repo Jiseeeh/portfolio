@@ -6,6 +6,16 @@ const nextConfig = {
     SANITY_DATASET: process.env.SANITY_DATASET,
     SANITY_API_VERSION: process.env.SANITY_API_VERSION,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+        port: "",
+        pathname: "/images/**",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;
