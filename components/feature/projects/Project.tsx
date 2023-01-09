@@ -29,7 +29,7 @@ const Project: React.FC<ProjectProps> = ({ data, projectIndex }) => {
         <Image
           className={`max-w-lg  h-auto w-auto rounded-md shadow-2xl cursor-pointer md:hover:scale-105 ${
             isReversed ? "md:hover:rotate-3" : "md:hover:-rotate-3"
-          } transition-transform ease-in-out`}
+          } transform-ease-out`}
           src={urlFor(data.projectImage).url()}
           alt="Screenshot of the project."
           height={500}
@@ -46,7 +46,7 @@ const Project: React.FC<ProjectProps> = ({ data, projectIndex }) => {
             <ProjectBadge key={index} title={tech} />
           ))}
           <AiFillGithub
-            className="cursor-pointer hover:scale-110 transition-transform ease-in-out"
+            className="cursor-pointer hover:scale-110 transform-ease-out"
             size={40}
             onClick={() => onClick(data.repositoryLink)}
           />

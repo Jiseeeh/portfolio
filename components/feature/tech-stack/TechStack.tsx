@@ -20,7 +20,7 @@ const TechStack: React.FC<TechStackProps> = ({ data }) => {
             data-tip={item.title}
           >
             <Image
-              className="hover:scale-125 transition-transform ease-in-out"
+              className="hover:scale-125 transform-ease-out"
               src={urlFor(item.image).url()}
               alt={item.title}
               width={125}

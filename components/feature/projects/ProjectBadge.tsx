@@ -6,7 +6,7 @@ interface ProjectBadgeProps {
 
 const ProjectBadge: React.FC<ProjectBadgeProps> = ({ title }) => {
   return (
-    <span className="badge shadow-lg hover:scale-110 transition-transform ease-in-out">
+    <span className="badge shadow-lg hover:scale-110 transform-ease-out">
       {title}
     </span>
   );
