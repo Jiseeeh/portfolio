@@ -6,4 +6,8 @@
   .title {
     @apply text-5xl font-bold;
   }
+
+  .transform-ease-out {
+    @apply transition-transform ease-in-out;
+  }
 }
