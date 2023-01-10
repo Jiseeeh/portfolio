@@ -41,7 +41,11 @@ const Project: React.FC<ProjectProps> = ({ data, projectIndex }) => {
       </section>
       <section className="flex-col">
         <p className="p-3">{data.description}</p>
-        <section className="flex flex-wrap items-center gap-2">
+        <section
+          className={`flex flex-wrap items-center gap-2 ${
+            isReversed ? "md:justify-end" : ""
+          }`}
+        >
           {data.technologiesUsed.map((tech, index) => (
             <ProjectBadge key={index} title={tech} />
           ))}
