@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
         <Image
           src="/profile.webp"
           className="max-w-sm rounded-lg shadow-2xl hidden md:block"
-          alt=""
+          alt="A picture of me crossing arms."
           height={500}
           width={500}
         />
