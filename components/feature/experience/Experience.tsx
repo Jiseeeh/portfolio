@@ -60,7 +60,7 @@ const Experience: React.FC<ExperienceProps> = ({
             enableOutline
           />
         ) : workExperienceItems.length === 0 ? (
-          <NoWorkExperience /> //TODO: lazy load this
+          <NoWorkExperience />
         ) : (
           <Chrono
             items={workExperienceItems}
