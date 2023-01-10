@@ -23,7 +23,10 @@ const Hero: React.FC = () => {
             exploring the vast world of programming&#44; specifically web
             development&#46;
           </p>
-          <a href="#contact" className="btn btn-primary">
+          <a
+            href="#contact"
+            className="btn btn-primary transform-scale hover:scale-105"
+          >
             Say Hi&#33;&nbsp;
             <MdOutlineWavingHand size={20} />
           </a>
