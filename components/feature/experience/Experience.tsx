@@ -29,7 +29,7 @@ const Experience: React.FC<ExperienceProps> = ({
   };
 
   return (
-    <section className="flex flex-col items-center">
+    <section id="experience" className="flex flex-col items-center">
       <h1 className="mb-5 title">Experience</h1>
       <section className="tabs">
         <h2
