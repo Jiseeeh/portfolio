@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
+import { RxDoubleArrowUp } from "react-icons/rx";
 
 const Contact: React.FC = () => {
   const [subject, setSubject] = useState("");
@@ -75,6 +76,11 @@ const Contact: React.FC = () => {
                 Submit
               </button>
             </section>
+          </section>
+          <section className="fixed bottom-5 right-10">
+            <a href="#top" className="btn btn-ghost">
+              <RxDoubleArrowUp size={25} />
+            </a>
           </section>
         </section>
       </section>
