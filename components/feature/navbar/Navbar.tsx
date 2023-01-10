@@ -28,7 +28,7 @@ const Navbar: React.FC<NavbarProps> = ({ children }) => {
         readOnly
       />
       <section className="drawer-content flex flex-col">
-        <nav className="w-full navbar bg-base-100">
+        <nav id="top" className="w-full navbar bg-base-100">
           <section className="flex-none lg:hidden">
             <label
               htmlFor="drawer-toggler"
