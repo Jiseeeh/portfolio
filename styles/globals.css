@@ -11,3 +11,7 @@
     @apply transition-transform ease-in-out;
   }
 }
+
+* {
+  scroll-behavior: smooth;
+}
