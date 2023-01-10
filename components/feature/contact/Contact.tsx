@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <article className="hero min-h-screen bg-base-200 ">
+    <article id="contact" className="hero min-h-screen bg-base-200 ">
       <section className="p-0 m-5 hero-content flex-col md:p-1 lg:flex-row-reverse">
         <section className="text-center lg:text-left">
           <h1 className="title">Get in touch!</h1>
