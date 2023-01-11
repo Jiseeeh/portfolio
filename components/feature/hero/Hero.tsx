@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       <section className="hero-content flex-col lg:flex-row-reverse">
         <Image
           src="/profile.webp"
-          className="max-w-sm rounded-lg shadow-2xl hidden md:block"
+          className="max-w-sm rounded-lg shadow-2xl hidden md:transform-ease-out md:hover:scale-105 md:block"
           alt="A picture of me crossing arms."
           priority
           height={500}
