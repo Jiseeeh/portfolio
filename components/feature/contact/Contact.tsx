@@ -36,10 +36,10 @@ const Contact: React.FC = () => {
         <section className="text-center lg:text-left">
           <h1 className="title">Get in touch!</h1>
           <p className="py-6">
-            I'm always open to new opportunities, collaborations, or just a
-            casual chat about your latest project or idea. Don't hesitate to get
-            in touch through the form; I'll do my best to get back to you as
-            soon as I don't have any school work.
+            I&apos;m always open to new opportunities, collaborations, or just a
+            casual chat about your latest project or idea. Don&apos;t hesitate
+            to get in touch through the form; I&apos;ll do my best to get back
+            to you as soon as I don&apos;t have any school work.
           </p>
         </section>
         <section className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
