@@ -5,7 +5,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        catamaran: ["Catamaran", "sans-serif"],
+        metrophobic: ["Metrophobic", "sans-serif"],
+        orienta: ["Orienta", "sans-serif"],
+      },
+    },
   },
   plugins: [require("daisyui")],
 };
