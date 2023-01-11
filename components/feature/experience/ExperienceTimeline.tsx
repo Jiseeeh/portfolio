@@ -1,5 +1,6 @@
 import React from "react";
 import { Chrono } from "react-chrono";
+import Image from "next/image";
 
 import IExperience from "interfaces/IExperience";
 
@@ -28,8 +29,8 @@ const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({
       {type === "education" ? (
         // educ tab icons
         <section className="chrono-icons">
-          <img src="/academic_cap.svg" alt="Icon of a mortarboard" />
-          <img src="/academic_cap.svg" alt="Icon of a mortarboard" />
+          <Image src="/academic_cap.svg" alt="Icon of a mortarboard" fill />
+          <Image src="/academic_cap.svg" alt="Icon of a mortarboard" fill />
         </section>
       ) : (
         // work tab icons
