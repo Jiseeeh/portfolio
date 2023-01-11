@@ -21,6 +21,11 @@ const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({
         primary: "#6E819F",
         secondary: "#e6efff",
       }}
+      classNames={{
+        cardTitle: "p-3 !text-grayish",
+        cardText: "!p-0",
+        card: "p-6",
+      }}
       allowDynamicUpdate
       useReadMore
       hideControls
