@@ -16,7 +16,7 @@ const TechStack: React.FC<TechStackProps> = ({ data }) => {
         {data.map((item) => (
           <section
             key={item.title}
-            className="md:tooltip md:tooltip-right"
+            className="md:tooltip md:tooltip-top"
             data-tip={item.title}
           >
             <Image
