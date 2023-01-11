@@ -40,7 +40,7 @@ const Project: React.FC<ProjectProps> = ({ data, projectIndex }) => {
         />
       </section>
       <section className="flex-col">
-        <p className="p-3">{data.description}</p>
+        <p className="p-3 max-w-5xl">{data.description}</p>
         <section
           className={`flex flex-wrap items-center gap-2 ${
             isReversed ? "md:justify-end" : ""
