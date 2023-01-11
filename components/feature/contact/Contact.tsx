@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
       <section className="p-0 m-5 hero-content flex-col md:p-1 lg:flex-row-reverse">
         <section className="text-center lg:text-left">
           <h1 className="title">Get in touch!</h1>
-          <p className="py-6">
+          <p className="py-6 max-w-xl">
             I&apos;m always open to new opportunities, collaborations, or just a
             casual chat about your latest project or idea. Don&apos;t hesitate
             to get in touch through the form; I&apos;ll do my best to get back
