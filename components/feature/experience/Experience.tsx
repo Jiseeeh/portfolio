@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Chrono } from "react-chrono";
 
 import IExperience from "interfaces/IExperience";
+import ExperienceTimeline from "./ExperienceTimeline";
 import NoWorkExperience from "./NoWorkExperience";
 
 interface ExperienceProps {
@@ -51,31 +51,11 @@ const Experience: React.FC<ExperienceProps> = ({
       </section>
       <section className="mb-5 min-h-max w-full max-w-4xl mx-auto">
         {currentTab === Tabs.EDUCATION ? (
-          <Chrono
-            items={educExperienceItems}
-            mode="VERTICAL_ALTERNATING"
-            theme={{
-              secondary: "#F0FFFF",
-            }}
-            allowDynamicUpdate
-            useReadMore
-            hideControls
-            enableOutline
-          />
+          <ExperienceTimeline items={educExperienceItems} type="education" />
         ) : workExperienceItems.length === 0 ? (
           <NoWorkExperience />
         ) : (
-          <Chrono
-            items={workExperienceItems}
-            mode="VERTICAL_ALTERNATING"
-            theme={{
-              secondary: "#F0FFFF",
-            }}
-            allowDynamicUpdate
-            useReadMore
-            hideControls
-            enableOutline
-          />
+          <ExperienceTimeline items={workExperienceItems} type="work" />
         )}
       </section>
     </section>
