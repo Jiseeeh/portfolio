@@ -77,7 +77,7 @@ const Contact: React.FC = () => {
               </button>
             </section>
           </section>
-          <section className="fixed bottom-5 right-10">
+          <section className="fixed bottom-5 right-5">
             <a href="#top" className="btn btn-ghost">
               <RxDoubleArrowUp size={25} />
             </a>
