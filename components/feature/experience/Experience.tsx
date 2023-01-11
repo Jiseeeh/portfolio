@@ -54,6 +54,9 @@ const Experience: React.FC<ExperienceProps> = ({
           <Chrono
             items={educExperienceItems}
             mode="VERTICAL_ALTERNATING"
+            theme={{
+              secondary: "#F0FFFF",
+            }}
             allowDynamicUpdate
             useReadMore
             hideControls
@@ -65,6 +68,9 @@ const Experience: React.FC<ExperienceProps> = ({
           <Chrono
             items={workExperienceItems}
             mode="VERTICAL_ALTERNATING"
+            theme={{
+              secondary: "#F0FFFF",
+            }}
             allowDynamicUpdate
             useReadMore
             hideControls
