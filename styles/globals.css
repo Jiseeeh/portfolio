@@ -17,3 +17,7 @@
 * {
   scroll-behavior: smooth;
 }
+
+p {
+  font-family: "Orienta", sans-serif;
+}
