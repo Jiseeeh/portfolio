@@ -6,7 +6,7 @@
 
 @layer components {
   .title {
-    @apply text-5xl font-bold;
+    @apply text-5xl font-bold font-heading;
   }
 
   .transform-ease-out {
