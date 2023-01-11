@@ -25,6 +25,7 @@ export const getStaticProps = async () => {
       techStack,
       projects,
     },
+    revalidate: 10,
   };
 };
 
