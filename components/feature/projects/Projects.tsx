@@ -9,7 +9,7 @@ interface ProjectsProps {
 
 const Projects: React.FC<ProjectsProps> = ({ data }) => {
   return (
-    <article id="projects" className="flex flex-col p-3 mt-5 ">
+    <article id="projects" className="flex flex-col p-3 my-10 ">
       <h1 className="title text-center">Projects</h1>
       {data.map((project, index) => (
         <Project key={project.title} data={project} projectIndex={index + 1} />
