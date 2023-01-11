@@ -18,7 +18,8 @@ const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({
       items={items}
       mode="VERTICAL_ALTERNATING"
       theme={{
-        secondary: "#F0FFFF",
+        primary: "#6E819F",
+        secondary: "#e6efff",
       }}
       allowDynamicUpdate
       useReadMore
