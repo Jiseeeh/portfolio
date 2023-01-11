@@ -16,7 +16,7 @@ const NavbarSideContent: React.FC<NavbarSideContentProps> = ({
         className="drawer-overlay"
         onClick={unToggleSidebar}
       ></label>
-      <ul className="menu p-4 w-80 bg-base-100">
+      <ul className="menu p-4 w-80 bg-base-100 font-catamaran">
         {/*  Sidebar content */}
         <NavbarListButtons unToggleSidebar={unToggleSidebar} />
       </ul>
