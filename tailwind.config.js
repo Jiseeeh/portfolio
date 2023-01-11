@@ -11,6 +11,9 @@ module.exports = {
         metrophobic: ["Metrophobic", "sans-serif"],
         orienta: ["Orienta", "sans-serif"],
       },
+      colors: {
+        "dark-blue": "#243756",
+      },
     },
   },
   plugins: [require("daisyui")],
