@@ -27,8 +27,8 @@ const Project: React.FC<ProjectProps> = ({ data, projectIndex }) => {
       <section className="flex flex-col">
         <h2 className="my-4 text-4xl text-center font-bold">{data.title}</h2>
         <Image
-          className={`max-w-lg  h-auto w-auto rounded-md shadow-2xl cursor-pointer md:hover:scale-105 ${
-            isReversed ? "md:hover:rotate-3" : "md:hover:-rotate-3"
+          className={`max-w-lg h-auto w-auto rounded-md shadow-2xl cursor-pointer lg:mx-10 lg:hover:scale-105 ${
+            isReversed ? "lg:hover:rotate-3" : "lg:hover:-rotate-3"
           } transform-ease-out`}
           src={urlFor(data.projectImage).url()}
           alt="Screenshot of the project."
