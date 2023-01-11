@@ -19,7 +19,7 @@ const Navbar: React.FC<NavbarProps> = ({ children }) => {
   };
 
   return (
-    <section className="drawer">
+    <section className="drawer" data-theme="winter">
       <input
         id="drawer-toggler"
         type="checkbox"
