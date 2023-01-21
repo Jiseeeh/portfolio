@@ -51,7 +51,11 @@ const NavbarListButtons: React.FC<NavbarListButtonsProps> = ({
         </a>
       </li>
       <li>
-        <a href="#" className="btn btn-ghost rounded-lg" onClick={onLinkClick}>
+        <a
+          href="https://blog.jiseeeh.vercel.app/"
+          className="btn btn-ghost rounded-lg"
+          onClick={onLinkClick}
+        >
           Blog
         </a>
       </li>
