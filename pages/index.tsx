@@ -47,7 +47,7 @@ export default function Home({
         />
         <meta
           name="keywords"
-          content="portfolio, web development, design, projects, John Carlo Camara, Jiseeeh"
+          content="portfolio, web development, design, projects, John Carlo Camara, Jiseeeh, john carlo camara, john carlo n. camara, John Carlo N. Camara, john camara, John Camara, JC Camara, jc camara"
         />
         <meta name="author" content="Jiseeeh" />
         <meta property="og:title" content="John Carlo N. Camara" />
