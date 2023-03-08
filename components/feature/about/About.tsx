@@ -10,7 +10,7 @@ const About: React.FC<AboutProps> = ({ data }) => {
       <section className="mb-6 max-w-6xl mx-auto ">
         <h1 className="mb-5 title text-center">About me</h1>
         <section className="m-3 p-6 rounded-md">
-          <p className="p-2 leading-7">{data}</p>
+          <p className="p-2 leading-7 lg:text-xl lg:leading-8">{data}</p>
         </section>
       </section>
     </article>
