@@ -24,6 +24,15 @@ const NavbarListButtons: React.FC<NavbarListButtonsProps> = ({
       </li>
       <li>
         <a
+          href="#projects"
+          className="btn btn-ghost rounded-lg"
+          onClick={onLinkClick}
+        >
+          Projects
+        </a>
+      </li>
+      <li>
+        <a
           href="#experience"
           className="btn btn-ghost rounded-lg"
           onClick={onLinkClick}
@@ -39,15 +48,6 @@ const NavbarListButtons: React.FC<NavbarListButtonsProps> = ({
         >
           {" "}
           Skills
-        </a>
-      </li>
-      <li>
-        <a
-          href="#projects"
-          className="btn btn-ghost rounded-lg"
-          onClick={onLinkClick}
-        >
-          Projects
         </a>
       </li>
       <li>
