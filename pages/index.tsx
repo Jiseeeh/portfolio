@@ -63,9 +63,9 @@ export default function Home({
       </Head>
       <Hero />
       <About data={aboutMe} />
+      <Projects data={projects} />
       <Experience educExperienceItems={education} workExperienceItems={work} />
       <TechStack data={techStack} />
-      <Projects data={projects} />
       <Contact />
     </>
   );
