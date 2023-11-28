@@ -59,7 +59,7 @@ export default function Home({
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/profile.webp" />
-        <link rel="canonical" href="https://jiseeeh.vercel.app" />
+        <link rel="canonical" href="https://portfolio-jiseeeh.vercel.app/" />
         <link rel="icon" href="/avatar.ico" />
       </Head>
       <Hero />
